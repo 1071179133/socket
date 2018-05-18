@@ -23,8 +23,6 @@ socket							#项目根目录
         |-- chenjianwen			#用户chenjianwen家目录
         `-- root				#用户root家目录
 
-13 directories, 12 files
-
 2.python版本：python-3.5.3
 
 3.程序使用：

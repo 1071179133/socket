@@ -3,7 +3,9 @@
 # author：chenjianwen
 # email：1071179133@qq.com
 
+import os
 import socket
+import hashlib
 
 class client_ftp(object):
     def __init__(self,host,port):
@@ -22,54 +24,87 @@ class client_ftp(object):
         self.user = input("username：").strip()
         self.passwd = input("password：").strip()
         self.client.sendall(self.user.encode("utf-8"))  # 发送user给服务端
+        self.client.recv(1024)          #服务端收到user回应
         self.client.sendall(self.passwd.encode("utf-8"))  # 发送passwd给服务端
+        self.client.recv(1024)  # 服务端收到passwd回应
+        self.m = hashlib.md5()
 
     def done_cmd(self,cmd):
-        #self.client.sendall(self.user.encode("utf-8"))      #发送user给服务端
-        #user_c = self.client.recv(102400)                   #接收服务端的回应
-        #self.client.sendall(self.passwd.encode("utf-8"))    #发送passwd给服务端
-        #passwd_c = self.client.recv(102400)                 #接收服务端的回应
         self.client.sendall(cmd.encode("utf-8"))            #发动执行命令给服务端
-        data = self.client.recv(102400)                     #接收命令执行的返回结果
-        data = data.decode()
-        print(data)
+        self.client.recv(1024)                              #接收服务端返回ack信号，说明它已收到执行命令
+        self.client.send("you can done and send data to me".encode("utf-8"))  ##提示服务端可以开始执行命令并发送数据了
+        msg_size = int(self.client.recv(1024).decode("utf-8"))             #接收返回结果的长度
+        self.client.send("Client Already Get The Msg Length!".encode("utf-8"))
+        recv_size = 0
+        recv_data = ""
+        while recv_size < msg_size:
+            if msg_size - recv_size > 1024:
+                size = 1024
+            else:
+                size = msg_size - recv_size
+            data = self.client.recv(1024).decode()               #接收命令执行的返回结果
+            recv_size += len(data)
+            recv_data += data
+        print(recv_data)
 
     def get_file(self,cmd):
-        #self.client.sendall(self.user.encode("utf-8"))      #发送user给服务端
-        #user_c = self.client.recv(102400)                   #接收服务端的回应
-        #self.client.sendall(self.passwd.encode("utf-8"))    #发送passwd给服务端
-        #passwd_c = self.client.recv(102400)                 #接收服务端的回应
-
         msg_cmd = cmd.split(' ')[0]
         msg_filename = cmd.split(' ')[1]
         self.client.sendall(msg_cmd.encode("utf-8"))
-        #data = self.client.recv(102400)
+        self.client.recv(1024)      ##接收服务端回应说收到执行指令
         self.client.sendall(msg_filename.encode("utf-8"))
-        data = self.client.recv(102400)
-        f = open(msg_filename,'wb')
-        if f.write(data):
-            print("文件[%s]下载成功"%msg_filename)
-        f.close()
+        self.client.recv(1024)  ##接收服务端回应说收到执行文件名了
+        self.client.send("you can send data to me".encode("utf-8"))        ##提示服务端可以开始发送数据了
+        file_size = int(self.client.recv(1024).decode("utf-8"))      #接收文件数据的大小
+        #print(file_size)
+        if file_size != 0:
+            print("文件执行下载....")
+            recv_file_size = 0
+            f = open(msg_filename, 'wb')
+            while recv_file_size < file_size:   #当接收到的数据大小小于文件数据总大小
+                if file_size - recv_file_size > 1024:   #表是不是最后一次接收                         ##解决粘包问题
+                    size = 1024
+                else:                                   #小于或等于1024，表是是最后一次接收，有多少收多少         ##解决粘包问题
+                    size = file_size - recv_file_size
+                data = self.client.recv(size)
+                self.m.update(data)
+                f.write(data)
+                recv_file_size += len(data)
+            else:
+                server_file_md5 = self.client.recv(1024).decode("utf-8")      #接收服务端发来的MD5
+                recv_file_md5 = self.m.hexdigest()
+                if server_file_md5 == recv_file_md5:
+                    print("已校验MD5值，下载成功")
+                else:
+                    print("MD5值校验失败，文件数据有错，下载失败")
+                f.close()
+        else:
+            print("文件不存在，无法下载....")
 
     def push_file(self,cmd):
-        #self.client.sendall(self.user.encode("utf-8"))      #发送user给服务端
-        #user_c = self.client.recv(102400)                   #接收服务端的回应
-        #self.client.sendall(self.passwd.encode("utf-8"))    #发送passwd给服务端
-        #passwd_c = self.client.recv(102400)                 #接收服务端的回应
-
         msg_cmd = cmd.split(' ')[0]
         print(msg_cmd)
-        self.client.sendall(msg_cmd.encode("utf-8"))
-        #data = self.client.recv(102400)
+        self.client.sendall(msg_cmd.encode("utf-8"))           #发送命令给服务端
+        self.client.recv(1024)          ##服务端回应已收到cmd
         msg_filename = cmd.split(' ')[1]
         print(msg_filename)
-        self.client.sendall(msg_filename.encode("utf-8"))
-        data = self.client.recv(102400)
-        f = open(msg_filename, 'rb')
-        data = f.read()
-        self.client.sendall(data)
-        print("上传文件[%s]成功"%msg_filename)
-        f.close()
+        if os.path.isfile(msg_filename):
+            self.client.sendall(msg_filename.encode("utf-8"))       #发送文件名给服务端
+            self.client.recv(1024)  ##服务端回应已收到文件名
+            file_size = str(os.stat(msg_filename).st_size).encode("utf-8")      ##获取文件大小，转换为二进制
+            self.client.send(file_size)         ##发送文件大小给服务端
+            self.client.recv(1024)      ##服务端反馈已收到文件大小信号
+            f = open(msg_filename, 'rb')
+            for line in f:
+                self.m.update(line)
+                self.client.sendall(line)
+            file_md5 = self.m.hexdigest()
+            self.client.send(file_md5.encode("utf-8"))
+            push_status = self.client.recv(1024).decode("utf-8")
+            print(push_status)
+            f.close()
+        else:
+            print("[%s]文件不存在，无法上传..."%msg_filename)
 
     def logout(self,cmd):
         print("退出ftp客户端....")
@@ -78,7 +113,7 @@ class client_ftp(object):
 if __name__ == "__main__":
     client = client_ftp('127.0.0.1', 6969)
     print("""=========使用说明=========
-    ls/dir           #查看目录下文件列表
+    ls/dir           #查看目录下文件列表[windows下不支持ls命令]
     get filename     #下载文件
     push filename    #上传文件
     q                #退出客户端

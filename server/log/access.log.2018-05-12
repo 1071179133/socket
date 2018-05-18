@@ -1,0 +1,146 @@
+2018-05-16 09:50:26 socket_server.py:21 line [INFO] 等待连接：
+2018-05-16 09:50:30 socket_server.py:29 line [INFO] 连接来了.....
+2018-05-16 09:50:33 socket_server.py:45 line [INFO] user:[root],addr:[('127.0.0.1', 43816)],login susess....
+2018-05-16 09:50:38 socket_server.py:80 line [INFO] user:[root],addr:[('127.0.0.1', 43816)],执行命令[ls]
+2018-05-16 09:50:44 socket_server.py:80 line [INFO] user:[root],addr:[('127.0.0.1', 43816)],执行命令[dir]
+2018-05-16 09:50:54 socket_server.py:61 line [INFO] user:[root],addr:[('127.0.0.1', 43816)],get [login.py]
+2018-05-16 09:50:54 socket_server.py:65 line [INFO] user:[root],addr:[('127.0.0.1', 43816)],下载文件[login.py]成功
+2018-05-16 09:51:05 socket_server.py:70 line [INFO] user:[root],addr:[('127.0.0.1', 43816)],push [login.py]
+2018-05-16 09:51:05 socket_server.py:74 line [INFO] user:[root],addr:[('127.0.0.1', 43816)],上传文件[login.py]成功
+2018-05-16 09:51:13 socket_server.py:70 line [INFO] user:[root],addr:[('127.0.0.1', 43816)],push [login.py]
+2018-05-16 09:51:13 socket_server.py:74 line [INFO] user:[root],addr:[('127.0.0.1', 43816)],上传文件[login.py]成功
+2018-05-16 09:51:20 socket_server.py:70 line [INFO] user:[root],addr:[('127.0.0.1', 43816)],push [login.py]
+2018-05-16 09:51:20 socket_server.py:74 line [INFO] user:[root],addr:[('127.0.0.1', 43816)],上传文件[login.py]成功
+2018-05-16 09:51:26 socket_server.py:70 line [INFO] user:[root],addr:[('127.0.0.1', 43816)],push [login.py]
+2018-05-16 09:51:26 socket_server.py:74 line [INFO] user:[root],addr:[('127.0.0.1', 43816)],上传文件[login.py]成功
+2018-05-16 09:51:33 socket_server.py:61 line [INFO] user:[root],addr:[('127.0.0.1', 43816)],get [login.py]
+2018-05-16 09:51:33 socket_server.py:65 line [INFO] user:[root],addr:[('127.0.0.1', 43816)],下载文件[login.py]成功
+2018-05-16 09:51:39 socket_server.py:61 line [INFO] user:[root],addr:[('127.0.0.1', 43816)],get [login.py]
+2018-05-16 09:51:39 socket_server.py:65 line [INFO] user:[root],addr:[('127.0.0.1', 43816)],下载文件[login.py]成功
+2018-05-16 09:51:54 socket_server.py:80 line [INFO] user:[root],addr:[('127.0.0.1', 43816)],执行命令[ls]
+2018-05-16 09:51:59 socket_server.py:56 line [INFO] user:[root],addr:[('127.0.0.1', 43816)],连接断开.....
+2018-05-16 10:05:39 socket_server.py:22 line [INFO] 等待连接：
+2018-05-16 10:08:13 socket_server.py:22 line [INFO] 等待连接：
+2018-05-16 10:08:20 socket_server.py:30 line [INFO] 连接来了.....
+2018-05-16 10:08:38 socket_server.py:22 line [INFO] 等待连接：
+2018-05-16 10:08:40 socket_server.py:30 line [INFO] 连接来了.....
+2018-05-16 10:14:07 socket_server.py:22 line [INFO] 等待连接：
+2018-05-16 10:15:48 socket_server.py:22 line [INFO] 等待连接：
+2018-05-16 10:15:52 socket_server.py:30 line [INFO] 连接来了.....
+2018-05-16 10:15:58 socket_server.py:46 line [INFO] user:[root],addr:[('127.0.0.1', 59784)],login susess....
+2018-05-16 10:16:03 socket_server.py:84 line [INFO] user:[root],addr:[('127.0.0.1', 59784)],执行命令出错或命令不存在，[ls]
+2018-05-16 10:16:10 socket_server.py:84 line [INFO] user:[root],addr:[('127.0.0.1', 59784)],执行命令出错或命令不存在，[dir]
+2018-05-16 10:18:26 socket_server.py:57 line [INFO] user:[root],addr:[('127.0.0.1', 59784)],连接断开.....
+2018-05-16 10:21:50 socket_server.py:22 line [INFO] 等待连接：
+2018-05-16 10:29:19 socket_server.py:22 line [INFO] 等待连接：
+2018-05-16 10:33:12 socket_server.py:22 line [INFO] 等待连接：
+2018-05-16 10:39:19 socket_server.py:22 line [INFO] 等待连接：
+2018-05-16 10:41:44 socket_server.py:22 line [INFO] 等待连接：
+2018-05-16 10:45:58 socket_server.py:22 line [INFO] 等待连接：
+2018-05-16 11:36:27 socket_server.py:22 line [INFO] 等待连接：
+2018-05-16 11:36:31 socket_server.py:30 line [INFO] 连接来了.....
+2018-05-16 11:39:04 socket_server.py:22 line [INFO] 等待连接：
+2018-05-16 11:39:11 socket_server.py:30 line [INFO] 连接来了.....
+2018-05-16 11:39:16 socket_server.py:46 line [INFO] user:[root],addr:[('127.0.0.1', 51911)],login susess....
+2018-05-16 11:39:19 socket_server.py:84 line [INFO] user:[root],addr:[('127.0.0.1', 51911)],执行命令出错或命令不存在，[ls]
+2018-05-16 22:29:14 socket_server.py:22 line [INFO] 等待连接：
+2018-05-16 22:29:16 socket_server.py:30 line [INFO] 连接来了.....
+2018-05-16 22:29:21 socket_server.py:46 line [INFO] user:[root],addr:[('127.0.0.1', 64012)],login susess....
+2018-05-16 22:29:25 socket_server.py:84 line [INFO] user:[root],addr:[('127.0.0.1', 64012)],执行命令出错或命令不存在，[dir]
+2018-05-16 22:36:38 socket_server.py:22 line [INFO] 等待连接：
+2018-05-16 22:36:39 socket_server.py:30 line [INFO] 连接来了.....
+2018-05-16 22:36:43 socket_server.py:46 line [INFO] user:[root],addr:[('127.0.0.1', 65014)],login susess....
+2018-05-16 22:36:45 socket_server.py:84 line [INFO] user:[root],addr:[('127.0.0.1', 65014)],执行命令出错或命令不存在，[ls]
+2018-05-16 22:36:47 socket_server.py:84 line [INFO] user:[root],addr:[('127.0.0.1', 65014)],执行命令出错或命令不存在，[dir]
+2018-05-16 22:37:37 socket_server.py:22 line [INFO] 等待连接：
+2018-05-16 22:37:38 socket_server.py:30 line [INFO] 连接来了.....
+2018-05-16 22:37:42 socket_server.py:46 line [INFO] user:[root],addr:[('127.0.0.1', 65099)],login susess....
+2018-05-16 22:37:43 socket_server.py:86 line [INFO] user:[root],addr:[('127.0.0.1', 65099)],执行命令出错或命令不存在，[ls]
+2018-05-16 22:38:13 socket_server.py:22 line [INFO] 等待连接：
+2018-05-16 22:38:15 socket_server.py:30 line [INFO] 连接来了.....
+2018-05-16 22:38:20 socket_server.py:46 line [INFO] user:[root],addr:[('127.0.0.1', 65204)],login susess....
+2018-05-16 22:38:22 socket_server.py:86 line [INFO] user:[root],addr:[('127.0.0.1', 65204)],执行命令出错或命令不存在，[ls]
+2018-05-16 22:38:48 socket_server.py:86 line [INFO] user:[root],addr:[('127.0.0.1', 65204)],执行命令出错或命令不存在，[dir]
+2018-05-16 22:39:36 socket_server.py:22 line [INFO] 等待连接：
+2018-05-16 22:39:37 socket_server.py:30 line [INFO] 连接来了.....
+2018-05-16 22:39:41 socket_server.py:46 line [INFO] user:[root],addr:[('127.0.0.1', 65304)],login susess....
+2018-05-16 22:39:43 socket_server.py:86 line [INFO] user:[root],addr:[('127.0.0.1', 65304)],执行命令出错或命令不存在，[ls]
+2018-05-16 22:45:42 socket_server.py:22 line [INFO] 等待连接：
+2018-05-16 22:45:47 socket_server.py:30 line [INFO] 连接来了.....
+2018-05-16 22:45:50 socket_server.py:46 line [INFO] user:[root],addr:[('127.0.0.1', 49773)],login susess....
+2018-05-16 22:45:52 socket_server.py:87 line [INFO] user:[root],addr:[('127.0.0.1', 49773)],执行命令出错或命令不存在，[dir]
+2018-05-16 22:46:46 socket_server.py:87 line [INFO] user:[root],addr:[('127.0.0.1', 49773)],执行命令出错或命令不存在，[dir]
+2018-05-16 22:58:14 socket_server.py:22 line [INFO] 等待连接：
+2018-05-16 22:58:18 socket_server.py:30 line [INFO] 连接来了.....
+2018-05-16 22:58:22 socket_server.py:46 line [INFO] user:[root],addr:[('127.0.0.1', 51480)],login susess....
+2018-05-16 22:58:24 socket_server.py:87 line [INFO] user:[root],addr:[('127.0.0.1', 51480)],执行命令出错或命令不存在，[dir]
+2018-05-16 22:58:28 socket_server.py:87 line [INFO] user:[root],addr:[('127.0.0.1', 51480)],执行命令出错或命令不存在，[ls]
+2018-05-16 22:59:10 socket_server.py:22 line [INFO] 等待连接：
+2018-05-16 22:59:11 socket_server.py:30 line [INFO] 连接来了.....
+2018-05-16 22:59:15 socket_server.py:46 line [INFO] user:[root],addr:[('127.0.0.1', 51541)],login susess....
+2018-05-16 22:59:17 socket_server.py:87 line [INFO] user:[root],addr:[('127.0.0.1', 51541)],执行命令出错或命令不存在，[dir]
+2018-05-16 22:59:48 socket_server.py:22 line [INFO] 等待连接：
+2018-05-16 22:59:50 socket_server.py:30 line [INFO] 连接来了.....
+2018-05-16 22:59:55 socket_server.py:46 line [INFO] user:[root],addr:[('127.0.0.1', 51611)],login susess....
+2018-05-16 23:00:29 socket_server.py:22 line [INFO] 等待连接：
+2018-05-16 23:00:31 socket_server.py:30 line [INFO] 连接来了.....
+2018-05-16 23:00:34 socket_server.py:46 line [INFO] user:[root],addr:[('127.0.0.1', 51723)],login susess....
+2018-05-16 23:01:25 socket_server.py:22 line [INFO] 等待连接：
+2018-05-16 23:01:27 socket_server.py:30 line [INFO] 连接来了.....
+2018-05-16 23:01:31 socket_server.py:47 line [INFO] user:[root],addr:[('127.0.0.1', 51807)],login susess....
+2018-05-16 23:03:32 socket_server.py:22 line [INFO] 等待连接：
+2018-05-16 23:03:33 socket_server.py:30 line [INFO] 连接来了.....
+2018-05-16 23:03:38 socket_server.py:47 line [INFO] user:[root],addr:[('127.0.0.1', 52059)],login susess....
+2018-05-16 23:03:40 socket_server.py:85 line [INFO] user:[root],addr:[('127.0.0.1', 52059)],执行命令[dir]
+2018-05-16 23:03:49 socket_server.py:88 line [INFO] user:[root],addr:[('127.0.0.1', 52059)],执行命令出错或命令不存在，[ls]
+2018-05-16 23:03:53 socket_server.py:88 line [INFO] user:[root],addr:[('127.0.0.1', 52059)],执行命令出错或命令不存在，[ls]
+2018-05-16 23:03:55 socket_server.py:88 line [INFO] user:[root],addr:[('127.0.0.1', 52059)],执行命令出错或命令不存在，[ls]
+2018-05-16 23:04:05 socket_server.py:85 line [INFO] user:[root],addr:[('127.0.0.1', 52059)],执行命令[dir]
+2018-05-16 23:04:30 socket_server.py:22 line [INFO] 等待连接：
+2018-05-16 23:04:32 socket_server.py:30 line [INFO] 连接来了.....
+2018-05-16 23:04:36 socket_server.py:47 line [INFO] user:[root],addr:[('127.0.0.1', 52278)],login susess....
+2018-05-16 23:04:38 socket_server.py:85 line [INFO] user:[root],addr:[('127.0.0.1', 52278)],执行命令[dir]
+2018-05-16 23:04:46 socket_server.py:88 line [INFO] user:[root],addr:[('127.0.0.1', 52278)],执行命令出错或命令不存在，[ls]
+2018-05-16 23:05:40 socket_server.py:85 line [INFO] user:[root],addr:[('127.0.0.1', 52278)],执行命令[dir]
+2018-05-16 23:05:47 socket_server.py:63 line [INFO] user:[root],addr:[('127.0.0.1', 52278)],get [login.py]
+2018-05-16 23:05:47 socket_server.py:67 line [INFO] user:[root],addr:[('127.0.0.1', 52278)],下载文件[login.py]成功
+2018-05-16 23:05:58 socket_server.py:63 line [INFO] user:[root],addr:[('127.0.0.1', 52278)],get [socket_server.py]
+2018-05-16 23:05:58 socket_server.py:67 line [INFO] user:[root],addr:[('127.0.0.1', 52278)],下载文件[socket_server.py]成功
+2018-05-16 23:06:05 socket_server.py:72 line [INFO] user:[root],addr:[('127.0.0.1', 52278)],push [socket_server.py]
+2018-05-16 23:06:05 socket_server.py:76 line [INFO] user:[root],addr:[('127.0.0.1', 52278)],上传文件[socket_server.py]成功
+2018-05-16 23:06:25 socket_server.py:63 line [INFO] user:[root],addr:[('127.0.0.1', 52278)],get [push]
+2018-05-16 23:06:54 socket_server.py:22 line [INFO] 等待连接：
+2018-05-16 23:06:55 socket_server.py:30 line [INFO] 连接来了.....
+2018-05-16 23:06:59 socket_server.py:47 line [INFO] user:[root],addr:[('127.0.0.1', 52592)],login susess....
+2018-05-16 23:07:01 socket_server.py:85 line [INFO] user:[root],addr:[('127.0.0.1', 52592)],执行命令[dir]
+2018-05-16 23:07:06 socket_server.py:72 line [INFO] user:[root],addr:[('127.0.0.1', 52592)],push [login.py]
+2018-05-16 23:07:06 socket_server.py:76 line [INFO] user:[root],addr:[('127.0.0.1', 52592)],上传文件[login.py]成功
+2018-05-16 23:07:15 socket_server.py:72 line [INFO] user:[root],addr:[('127.0.0.1', 52592)],push [login.py]
+2018-05-16 23:07:15 socket_server.py:76 line [INFO] user:[root],addr:[('127.0.0.1', 52592)],上传文件[login.py]成功
+2018-05-16 23:07:21 socket_server.py:72 line [INFO] user:[root],addr:[('127.0.0.1', 52592)],push [login.py]
+2018-05-16 23:07:21 socket_server.py:76 line [INFO] user:[root],addr:[('127.0.0.1', 52592)],上传文件[login.py]成功
+2018-05-16 23:07:30 socket_server.py:72 line [INFO] user:[root],addr:[('127.0.0.1', 52592)],push [login.py]
+2018-05-16 23:07:30 socket_server.py:76 line [INFO] user:[root],addr:[('127.0.0.1', 52592)],上传文件[login.py]成功
+2018-05-16 23:07:47 socket_server.py:72 line [INFO] user:[root],addr:[('127.0.0.1', 52592)],push [login.py]
+2018-05-16 23:07:47 socket_server.py:76 line [INFO] user:[root],addr:[('127.0.0.1', 52592)],上传文件[login.py]成功
+2018-05-16 23:08:05 socket_server.py:63 line [INFO] user:[root],addr:[('127.0.0.1', 52592)],get [login.py]
+2018-05-16 23:08:05 socket_server.py:67 line [INFO] user:[root],addr:[('127.0.0.1', 52592)],下载文件[login.py]成功
+2018-05-16 23:08:14 socket_server.py:63 line [INFO] user:[root],addr:[('127.0.0.1', 52592)],get [login.py]
+2018-05-16 23:08:14 socket_server.py:67 line [INFO] user:[root],addr:[('127.0.0.1', 52592)],下载文件[login.py]成功
+2018-05-16 23:08:21 socket_server.py:85 line [INFO] user:[root],addr:[('127.0.0.1', 52592)],执行命令[dir]
+2018-05-16 23:08:38 socket_server.py:88 line [INFO] user:[root],addr:[('127.0.0.1', 52592)],执行命令出错或命令不存在，[ls]
+2018-05-16 23:14:55 socket_server.py:22 line [INFO] 等待连接：
+2018-05-16 23:14:59 socket_server.py:30 line [INFO] 连接来了.....
+2018-05-16 23:15:03 socket_server.py:47 line [INFO] user:[root],addr:[('127.0.0.1', 53739)],login susess....
+2018-05-16 23:15:16 socket_server.py:88 line [INFO] user:[root],addr:[('127.0.0.1', 53739)],执行命令出错或命令不存在，[ls]
+2018-05-16 23:15:28 socket_server.py:85 line [INFO] user:[root],addr:[('127.0.0.1', 53739)],执行命令[dir]
+2018-05-16 23:15:40 socket_server.py:63 line [INFO] user:[root],addr:[('127.0.0.1', 53739)],get [login.py]
+2018-05-16 23:15:40 socket_server.py:67 line [INFO] user:[root],addr:[('127.0.0.1', 53739)],下载文件[login.py]成功
+2018-05-16 23:15:49 socket_server.py:63 line [INFO] user:[root],addr:[('127.0.0.1', 53739)],get [login.py]
+2018-05-16 23:15:49 socket_server.py:67 line [INFO] user:[root],addr:[('127.0.0.1', 53739)],下载文件[login.py]成功
+2018-05-16 23:16:00 socket_server.py:72 line [INFO] user:[root],addr:[('127.0.0.1', 53739)],push [login.py]
+2018-05-16 23:16:00 socket_server.py:76 line [INFO] user:[root],addr:[('127.0.0.1', 53739)],上传文件[login.py]成功
+2018-05-16 23:16:08 socket_server.py:72 line [INFO] user:[root],addr:[('127.0.0.1', 53739)],push [login.py]
+2018-05-16 23:16:08 socket_server.py:76 line [INFO] user:[root],addr:[('127.0.0.1', 53739)],上传文件[login.py]成功
+2018-05-16 23:16:19 socket_server.py:85 line [INFO] user:[root],addr:[('127.0.0.1', 53739)],执行命令[dir]
+2018-05-16 23:16:23 socket_server.py:88 line [INFO] user:[root],addr:[('127.0.0.1', 53739)],执行命令出错或命令不存在，[ls]
